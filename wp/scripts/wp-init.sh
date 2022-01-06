@@ -2,8 +2,12 @@
 
 set -eux
 
-# TODO : est-il possible de remplacer sleep par attente qu'il soit démarré ? (avec timeout de 30s)
-sleep 30
+# Attente que la base de données soit up
+until wp db check >/dev/null 2>&1
+do
+    echo "Waiting..."
+    sleep 1
+done
 
 if ! wp core is-installed; then
     wp core install \

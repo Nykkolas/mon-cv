@@ -1,6 +1,6 @@
 version: '3.9'
 
-# TODO : utilisation des secrets (uniquement sur Swarm ?)
+# TODO : utilisation des secrets
 
 services:
   wordpress:
