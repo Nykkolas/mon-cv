@@ -1,7 +1,8 @@
 name: Build and test containers
 on: [push]
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Version de Docker Compose
-      run: docker compose version
+  Versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Version de Docker Compose
+        run: docker compose version
