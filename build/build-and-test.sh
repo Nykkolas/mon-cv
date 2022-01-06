@@ -22,4 +22,3 @@ docker compose up -d
 sleep 30
 
 docker compose run --rm wp sh /usr/src/wordpress/scripts/wp-test.sh
-
