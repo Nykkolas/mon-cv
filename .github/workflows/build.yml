@@ -4,17 +4,17 @@ jobs:
   Build-Test-Containers :
     runs-on: ubuntu-latest
     steps:
-      - name: Create dummy .env
-        run: echo "\
-          # DATABASE
-          DB_NAME=exampledb
-          DB_USER=exampleuser
-          DB_PASSWORD=examplepass
+      # - name: Create dummy .env
+      #   run: echo "\
+      #     # DATABASE
+      #     DB_NAME=exampledb
+      #     DB_USER=exampleuser
+      #     DB_PASSWORD=examplepass
 
-          # WORDPRESS
-          ADMINUSER=adminUser
-          ADMINPASSWORD=secret
-          ADMINEMAIL=toto@titi.net" > .env
+      #     # WORDPRESS
+      #     ADMINUSER=adminUser
+      #     ADMINPASSWORD=secret
+      #     ADMINEMAIL=toto@titi.net" > .env
       - name: Build Docker
         run: docker compose build
       - name: Up Containers
