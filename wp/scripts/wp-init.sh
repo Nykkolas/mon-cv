@@ -3,12 +3,12 @@
 set -eux
 
 # Attente que la base de données soit up
-until wp db check >/dev/null 2>&1
-do
+until wp db check >/dev/null 2>&1; do
     echo "Waiting..."
     sleep 1
 done
 
+# Configuration
 if ! wp core is-installed; then
     wp core install \
         --url=${URL} \
