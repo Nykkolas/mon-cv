@@ -1,8 +1,27 @@
 name: Build and test containers
 on: [push]
 jobs:
-  Versions:
+  Build-Test-Containers :
     runs-on: ubuntu-latest
     steps:
-      - name: Version de Docker Compose
-        run: docker compose version
+      - name: Create dummy .env
+        run: echo "\
+# DATABASE
+DB_NAME=exampledb
+DB_USER=exampleuser
+DB_PASSWORD=examplepass
+
+# WORDPRESS
+ADMINUSER=adminUser
+ADMINPASSWORD=secret
+ADMINEMAIL=toto@titi.net" > .env
+      - name: Build Docker
+        run: docker compose build
+      - name: Up Containers
+        run: docker compose up
+      - name: Sleep 30s
+        run: sleep 30
+      - name: Test container
+        run: docker compose run --rm wp sh /usr/src/wordpress/scripts/wp-test.sh
+        
+
