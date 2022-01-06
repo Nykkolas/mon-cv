@@ -1,0 +1,11 @@
+name: Build and test containers
+on: [push]
+jobs:
+  Build-Test-Containers :
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Build and test
+        run: sh ./build/build-and-test.sh
+        
