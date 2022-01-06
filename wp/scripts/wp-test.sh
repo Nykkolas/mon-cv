@@ -3,6 +3,6 @@
 set -eux
 
 # Nom du site 
-[ "$(wp option get blogname)" == "CV de Nicolas Fournie" ] || exit 1
+[ "$(wp option get blogname)" == "CV de Nicolas Fournier" ] || exit 1
 
 echo "Tests OK"
