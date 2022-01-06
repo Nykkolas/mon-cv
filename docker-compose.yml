@@ -14,8 +14,6 @@ services:
     ports:
       - 8080:80
     env_file: ./env/db.env
-    environment:
-      WORDPRESS_DB_HOST: db
     volumes:
       - wordpress:/var/www/html
 
@@ -44,8 +42,6 @@ services:
     env_file: 
       - ./env/db.env
       - ./env/wordpress.env
-    environment:
-      WORDPRESS_DB_HOST: db
     command: /bin/sh -eux /usr/src/wordpress/scripts/wp-init.sh
 
 volumes:
