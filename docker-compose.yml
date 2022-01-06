@@ -1,0 +1,53 @@
+version: '3.9'
+
+# TODO : utilisation des secrets (uniquement sur Swarm ?)
+
+services:
+  wordpress:
+    image: inconico/mon-cv-wordpress
+    build: 
+      context: ./wordpress
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - 8080:80
+    env_file: ./env/db.env
+    environment:
+      WORDPRESS_DB_HOST: db
+    volumes:
+      - wordpress:/var/www/html
+
+  db:
+    image: mysql:5.7
+    restart: always
+    env_file: ./env/db.env
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+
+  wp:
+    image: inconico/mon-cv-wp
+    build:
+      context: ./wp
+      dockerfile: Dockerfile
+    volumes:
+      - wordpress:/var/www/html
+    links:
+      - db:mysql
+    depends_on:
+      - db
+      - wordpress
+    user: xfs # https://stackoverflow.com/questions/50999848/how-to-run-wp-cli-in-docker-compose-yml
+    env_file: 
+      - ./env/db.env
+      - ./env/wordpress.env
+    environment:
+      WORDPRESS_DB_HOST: db
+    command: /bin/sh -eux /usr/src/wordpress/scripts/wp-init.sh
+
+volumes:
+  wordpress:
+  db:
