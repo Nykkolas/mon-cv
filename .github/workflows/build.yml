@@ -21,7 +21,7 @@ jobs:
       - name: Build Docker
         run: docker compose build
       - name: Up Containers
-        run: docker compose up
+        run: docker compose up -d
       - name: Sleep 30s
         run: sleep 30
       - name: Test container
