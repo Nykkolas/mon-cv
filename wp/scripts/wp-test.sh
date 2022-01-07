@@ -3,7 +3,7 @@
 set -eux
 
 # URL
-[ "$(wp option get siteurl)" == "http://localhost:8080" ] || exit 1
+[ "$(wp option get siteurl)" == "$URL" ] || exit 1
 
 # Nom du site 
 [ "$(wp option get blogname)" == "CV de Nicolas Fournier" ] || exit 1
