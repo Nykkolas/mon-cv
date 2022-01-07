@@ -1,5 +1,7 @@
 name: Build and test containers
-on: [push]
+on: 
+  push:
+  workflow_call:
 jobs:
   Build-Test-Containers :
     runs-on: ubuntu-latest
