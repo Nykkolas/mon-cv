@@ -4,7 +4,5 @@ on:
 
 jobs:
   Start-Tests:
-    jobs:
-      uses: Nykkolas/mon-cv/.github/build-and-test.yml@main
+    uses: Nykkolas/mon-cv/.github/build-and-test.yml@main
 
-      
