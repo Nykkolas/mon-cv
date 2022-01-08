@@ -1,10 +1,13 @@
-name: Push containers
+name: Pre-release
 on:
   workflow_dispatch:
   
 jobs:
   Push:
     runs-on: ubuntu-latest
+    env:
+      TAG: "latest"
+      
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -21,3 +24,14 @@ jobs:
 
       - name: Push dans GHCR
         run: docker compose push
+
+      - name: Build TAR
+        run: sh create-package.sh
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: ${{ env.TAG }}
+          prerelease: true
+          title: "Development Build"
+          files: release/*

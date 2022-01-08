@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Valeurs par défaut 
-if [ -z ${ARTIFACTS_DIR+x} ]; then
+if [ -z ${ARTIFACTS_DIR:+x} ]; then
     ARTIFACTS_DIR=/tmp/mon-cv-artifacts
 fi
 
