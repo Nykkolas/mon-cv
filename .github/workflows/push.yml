@@ -3,20 +3,20 @@ on:
   workflow_dispatch:
   
 jobs:
-  Call-Build-and-Test:
-    uses: Nykkolas/mon-cv/.github/workflows/build-and-test.yml@master
-    with:
-      save-artifacts: true
+  # Call-Build-and-Test:
+  #   uses: Nykkolas/mon-cv/.github/workflows/build-and-test.yml@master
+  #   with:
+  #     save-artifacts: true
     
   Push:
-    needs: Call-Build-and-Test
+    # needs: Call-Build-and-Test
     runs-on: ubuntu-latest
-    env:
-      artifacts-path: /tmp/artifacts
+    # env:
+    #   artifacts-path: /tmp/artifacts
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-        
+
       - name: Login to Github Packages
         uses: docker/login-action@v1
         with:
@@ -24,14 +24,8 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_PAT }}
 
-      - name: Download artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: docker-artifacts
-          path: ${{ env.artifacts-path }}
+      - name: Build and test
+        run: sh ./build/build-and-test.sh
 
       - name: Push dans GHCR
-        run: |
-          docker load < ${{ env.artifacts-path }}/mon-cv-wordpress.tar
-          docker load < ${{ env.artifacts-path }}/mon-cv-wp.tar
-          docker compose push
+        run: docker compose push
