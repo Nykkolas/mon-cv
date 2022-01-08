@@ -14,6 +14,9 @@ jobs:
     env:
       artifacts-path: /tmp/artifacts
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        
       - name: Login to Github Packages
         uses: docker/login-action@v1
         with:

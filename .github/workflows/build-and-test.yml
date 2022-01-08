@@ -1,6 +1,7 @@
 name: Build and test containers
 on: 
   push:
+  workflow_dispatch:
   workflow_call:
     inputs:
       save-artifacts:
