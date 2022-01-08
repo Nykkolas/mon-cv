@@ -8,9 +8,7 @@ on:
 jobs:
   Push:
     runs-on: ubuntu-latest
-    env:
-      TAG: "latest"
-
+    
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -46,4 +44,5 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           title: "Development Build"
+          draft: true
           files: release/*
