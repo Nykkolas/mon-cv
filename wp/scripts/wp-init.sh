@@ -18,6 +18,8 @@ if ! wp core is-installed; then
         --admin_email=${ADMINEMAIL} \
         --admin_password=${ADMINPASSWORD}
 
+    # TODO : essayer avec wp-cfm au lieu de charger à la main
+
     # Langue
     wp language core install fr_FR 
     wp site switch-language fr_FR
