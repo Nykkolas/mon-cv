@@ -1,4 +1,4 @@
-name: Pre-release
+name: Release
 on:
   workflow_dispatch:
   push:
@@ -31,20 +31,19 @@ jobs:
 
       - name: Show Tag name
         run: echo $TAG
-        
-      # - name: Build and test
-      #   run: sh ./build/build-and-test.sh
 
-      # - name: Push dans GHCR
-      #   run: docker compose push
+      - name: Build and test
+        run: sh ./build/build-and-test.sh
 
-      # - name: Build TAR
-      #   run: sh ./build/create-package.sh
+      - name: Push dans GHCR
+        run: docker compose push
 
-      # - uses: "marvinpinto/action-automatic-releases@latest"
-      #   with:
-      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-      #     automatic_release_tag: ${{ env.TAG }}
-      #     prerelease: true
-      #     title: "Development Build"
-      #     files: release/*
+      - name: Build TAR
+        run: sh ./build/create-package.sh
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          title: "Development Build"
+          files: release/*
