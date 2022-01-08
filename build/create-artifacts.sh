@@ -5,10 +5,6 @@ if [ -z ${ARTIFACTS_DIR+x} ]; then
     ARTIFACTS_DIR=/tmp/mon-cv-artifacts
 fi
 
-if [ -z ${SAVE_ARTIFACTS+x} ]; then
-    SAVE_ARTIFACTS=false
-fi
-
 # Script
 set -eux
 

@@ -17,10 +17,7 @@ jobs:
         run: sh ./build/build-and-test.sh
       - name: Create artifacts
         if: ${{ inputs.save-artifacts == true }}
-        shell: sh
-        run: ./build/create-artifacts.sh
-        env:
-          SAVE_ARTIFACTS: true
+        run: sh ./build/create-artifacts.sh
       # - name: Upload artifacts
       #   uses: actions/upload-artifact@v2
       #   with:
