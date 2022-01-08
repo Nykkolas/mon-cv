@@ -19,7 +19,7 @@ jobs:
         env:
           SAVE_ARTIFACTS: false
       - name: Create artifacts
-        if: ${{ input.save-artifacts == true }}
+        if: ${{ inputs.save-artifacts == true }}
         run: sh ./build/build-and-test.sh
         env:
           SAVE_ARTIFACTS: true
