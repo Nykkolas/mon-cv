@@ -1,8 +1,0 @@
-name: Manual run Tests
-on:
-  workflow_dispatch:
-
-jobs:
-  Start-Tests:
-    uses: Nykkolas/mon-cv/.github/workflows/build-and-test.yml@master
-
