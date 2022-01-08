@@ -3,7 +3,7 @@
 set -eux
 
 if [ -f tag ]; then
-    TAG=$(cat version)
+    TAG=$(cat tag)
 fi
 
 if [ ! -f .env ]; then
