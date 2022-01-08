@@ -7,22 +7,28 @@ on:
         required: true
         default: false
         type: boolean
+    
 jobs:
   Build-Test-Containers :
     runs-on: ubuntu-latest
+    env:
+      ARTIFACTS_DIR: /tmp/artifacts/mon-cv
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+      
       - name: Build and test
         run: sh ./build/build-and-test.sh
+      
       - name: Create artifacts
         if: ${{ inputs.save-artifacts == true }}
         run: sh ./build/create-artifacts.sh
-      # - name: Upload artifacts
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: docker-artifact
-      #     path: path/to/artifacts
-      #     retention-days: 1
+        
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: docker-artifacts
+          path: ${{ env.ARTIFACTS_DIR }}
+          retention-days: 1
 
         
