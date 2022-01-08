@@ -7,6 +7,7 @@ jobs:
     uses: Nykkolas/mon-cv/.github/workflows/build-and-test.yml@master
     
   Push:
+    needs: Call-Build-and-Test
     runs-on: ubuntu-latest
     steps:
       - name: Login to Github Packages
