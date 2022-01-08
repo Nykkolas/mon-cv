@@ -2,12 +2,12 @@ name: Build and test containers
 on: 
   push:
   workflow_dispatch:
-  workflow_call:
-    inputs:
-      save-artifacts:
-        required: true
-        default: false
-        type: boolean
+  # workflow_call:
+  #   inputs:
+  #     save-artifacts:
+  #       required: true
+  #       default: false
+  #       type: boolean
     
 jobs:
   Build-Test-Containers :
@@ -21,15 +21,15 @@ jobs:
       - name: Build and test
         run: sh ./build/build-and-test.sh
       
-      - name: Create artifacts
-        if: ${{ inputs.save-artifacts == true }}
-        run: sh ./build/create-artifacts.sh
+      # - name: Create artifacts
+      #   if: ${{ inputs.save-artifacts == true }}
+      #   run: sh ./build/create-artifacts.sh
         
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: docker-artifacts
-          path: ${{ env.ARTIFACTS_DIR }}
-          retention-days: 1
+      # - name: Upload artifacts
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: docker-artifacts
+      #     path: ${{ env.ARTIFACTS_DIR }}
+      #     retention-days: 1
 
         
