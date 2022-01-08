@@ -4,7 +4,7 @@ version: '3.9'
 
 services:
   wordpress:
-    image: ghcr.io/nykkolas/mon-cv-wordpress
+    image: ghcr.io/nykkolas/mon-cv-wordpress:${TAG:-latest}
     build: 
       context: ./wordpress
       dockerfile: Dockerfile
@@ -27,7 +27,7 @@ services:
       - db:/var/lib/mysql
 
   wp:
-    image: ghcr.io/nykkolas/mon-cv-wp
+    image: ghcr.io/nykkolas/mon-cv-wp:${TAG:-latest}
     build:
       context: ./wp
       dockerfile: Dockerfile
