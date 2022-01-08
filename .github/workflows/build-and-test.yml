@@ -2,6 +2,11 @@ name: Build and test containers
 on: 
   push:
   workflow_call:
+    inputs:
+      save-artifacts:
+        required: true
+        default: false
+        type: boolean
 jobs:
   Build-Test-Containers :
     runs-on: ubuntu-latest
@@ -9,5 +14,20 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Build and test
+        if: ${{ inputs.save-artifacts != true }}
         run: sh ./build/build-and-test.sh
+        env:
+          SAVE_ARTIFACTS: false
+      - name: Create artifacts
+        if: ${{ input.save-artifacts == true }}
+        run: sh ./build/build-and-test.sh
+        env:
+          SAVE_ARTIFACTS: true
+      # - name: Upload artifacts
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: docker-artifact
+      #     path: path/to/artifacts
+      #     retention-days: 1
+
         

@@ -1,10 +1,12 @@
 name: Manual Push containers
 on:
   workflow_dispatch:
-
+  
 jobs:
   Call-Build-and-Test:
     uses: Nykkolas/mon-cv/.github/workflows/build-and-test.yml@master
+    with:
+      save-artifacts: true
     
   Push:
     needs: Call-Build-and-Test
