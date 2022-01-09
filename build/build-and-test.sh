@@ -2,7 +2,7 @@
 
 set -eux
 
-if [ ! -f .env ]; then
+if [ ! -s .env ]; then
     echo "\
         # DATABASE
         DB_NAME=exampledb

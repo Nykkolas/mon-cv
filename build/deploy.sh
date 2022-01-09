@@ -2,11 +2,11 @@
 
 set -eux
 
-if [ -f tag ]; then
+if [ -s tag ]; then
     TAG=$(cat tag)
 fi
 
-if [ ! -f .env ]; then
+if [ ! -s .env ]; then
     echo "Merci de créer un fichier .env"
     EXIT_CODE=1
 else
