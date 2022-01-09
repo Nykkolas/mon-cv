@@ -24,5 +24,6 @@ if ! wp core is-installed; then
     
     # Chargement de la conf
     wp plugin activate wp-cfm
+    # TODO : essayer de push puis diff ? (wp config diff ne semble pas fonctionner)
     wp config pull all_options
 fi
