@@ -20,6 +20,9 @@ docker compose build
 
 docker compose up -d
 
-sleep 30
+until docker compose ps wp | grep exited >/dev/null 2>&1; do
+    echo "Waiting end of wp-init..."
+    sleep 1
+done
 
 docker compose run --rm wp sh /usr/src/wordpress/scripts/wp-test.sh
