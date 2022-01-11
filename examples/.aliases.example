@@ -1,0 +1,3 @@
+# Usage : source .aliases
+
+alias wp="docker compose run --rm wp"

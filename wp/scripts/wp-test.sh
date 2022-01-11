@@ -6,26 +6,29 @@ set -eux
 [ "$(wp option get siteurl)" = "$URL" ] || exit 1
 
 # Nom du site 
-EXPECTED_TITLE="Coach et Coach Agile"
+EXPECTED_TITLE="Nicolas Fournier"
+EXPECTED_DESCRIPTION=""
 [ "$(wp option get blogname)" = "$EXPECTED_TITLE" ] || exit 1
-[ "$(wp option get blogdescription)" = "$EXPECTED_TITLE" ] || exit 1
+[ "$(wp option get blogdescription)" = "$EXPECTED_DESCRIPTION" ] || exit 1
 
 # Langue
 [ "$(wp option get WPLANG)" = "fr_FR" ] || exit 1
 
 # Plugins
-ACTIVE_PLUGINS_EXPECTED="wordpress-importer wp-cfm"
+ACTIVE_PLUGINS_EXPECTED="equal-height-columns wordpress-importer wp-cfm"
 ACTIVE_PLUGINS_LIST="$(wp plugin list --status=active --field=name)"
 
 diff <(echo $ACTIVE_PLUGINS_LIST) <(echo $ACTIVE_PLUGINS_EXPECTED) || exit 1
 
 # Pages
-PAGES_EXPECTED="Compétences"
+PAGES_EXPECTED="Bénévolat Bonjour, Expériences Compétences"
 PAGES_LIST="$(wp post list --post_type=page --field=post_title)"
 
 diff <(echo $PAGES_EXPECTED) <(echo $PAGES_LIST) || exit 1
 
 # Menus
 diff /usr/src/wordpress/scripts/test-data/expected-menus.csv <(wp menu list --format=csv) || exit 1
+
+# TODO : test des dates des images ou d'affichage correct des images (lien par lien ?)
 
 echo "Tests OK"

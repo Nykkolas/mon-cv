@@ -4,13 +4,13 @@ set -eux
 
 # Attente que la base de données soit up
 until wp db check >/dev/null 2>&1; do
-    echo "Waiting..."
+    echo "Waiting db..."
     sleep 1
 done
 
-# Configuration
+# Initialisation
 if ! wp core is-installed; then
-    # Configuration initiale
+    # Installation
     wp core install \
         --url=${URL} \
         --title="${TITLE}" \
@@ -20,7 +20,7 @@ if ! wp core is-installed; then
 
     # Téléchargement de la langue
     wp language core install fr_FR 
-    
+
     # Chargement de la conf
     wp plugin activate wp-cfm
     # TODO : essayer de push puis diff ? (wp config diff ne semble pas fonctionner)
@@ -29,4 +29,9 @@ if ! wp core is-installed; then
     # Delete all pages then load exported pages and menus
     wp post delete $(wp post list --post_type=page --format=ids)
     wp import /usr/src/wordpress/exports/all.xml --authors=create
+
+    # Import images and regenerate thumbnails
+    wp media import --preserve-filetime /usr/src/wordpress/medias/*
+    wp media regenerate --yes
+
 fi
