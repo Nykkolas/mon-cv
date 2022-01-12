@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+
+  # wordpress:
+  #   volumes:
+  #     - ./wordpress/config:/var/www/html/wp-content/config
+      # - ./wordpress/scripts:/usr/src/wordpress/scripts
+      # - ./wordpress/plugins:/usr/src/wordpress/wp-content/plugins
+
+  wp:
+    volumes:
+      - ./wp/scripts:/usr/src/wordpress/scripts
+      # - ./wp/medias:/usr/src/wordpress/medias
+      # - ./wp/exports:/usr/src/wordpress/exports

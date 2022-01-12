@@ -23,7 +23,7 @@ jobs:
         run: sh ./build/build-and-test.sh
 
       - name: Push dans GHCR
-        run: docker-compose push
+        run: docker compose push
 
       - name: Build TAR
         run: sh ./build/create-package.sh
