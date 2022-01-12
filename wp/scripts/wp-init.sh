@@ -27,7 +27,7 @@ if ! wp core is-installed; then
     wp config pull all_options
 
     # Delete all pages then load exported pages and menus
-    wp post delete $(wp post list --post_type=page --format=ids)
+    wp post delete $(wp post list --post_type=page --format=ids) --force 
     wp import /usr/src/wordpress/exports/all.xml --authors=create
 
     # Import images and regenerate thumbnails

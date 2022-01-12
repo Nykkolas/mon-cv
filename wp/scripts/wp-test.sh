@@ -20,11 +20,15 @@ ACTIVE_PLUGINS_LIST="$(wp plugin list --status=active --field=name)"
 
 diff <(echo $ACTIVE_PLUGINS_LIST) <(echo $ACTIVE_PLUGINS_EXPECTED) || exit 1
 
-# Pages
+## Pages
+# Vérifier que les bonnes pages sont publiées
 PAGES_EXPECTED="Bénévolat Bonjour, Expériences Compétences"
-PAGES_LIST="$(wp post list --post_type=page --field=post_title)"
+PAGES_LIST="$(wp post list --post_type=page --post_status=publish --field=post_title)"
 
 diff <(echo $PAGES_EXPECTED) <(echo $PAGES_LIST) || exit 1
+
+# Vérifier qu'aucun post n'est à la poubelle
+[ 0 -eq $(wp post list --post_type=page --post_status=trash --format=count) ] || exit 1
 
 # Menus
 diff /usr/src/wordpress/scripts/test-data/expected-menus.csv <(wp menu list --format=csv) || exit 1
