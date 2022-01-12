@@ -38,7 +38,7 @@ services:
     depends_on:
       - db
       - wordpress
-    user: xfs # https://stackoverflow.com/questions/50999848/how-to-run-wp-cli-in-docker compose-yml
+    user: xfs # https://stackoverflow.com/questions/50999848/how-to-run-wp-cli-in-docker-compose-yml
     env_file: 
       - ./env/db.env
       - ./env/wordpress.env
