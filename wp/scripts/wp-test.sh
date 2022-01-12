@@ -22,7 +22,7 @@ diff <(echo $ACTIVE_PLUGINS_LIST) <(echo $ACTIVE_PLUGINS_EXPECTED) || exit 1
 
 ## Pages
 # Vérifier que les bonnes pages sont publiées
-PAGES_EXPECTED="Bénévolat Bonjour, Expériences Compétences"
+PAGES_EXPECTED="Me contacter Le bénévolat Bonjour, Mon expérience Mes compétences"
 PAGES_LIST="$(wp post list --post_type=page --post_status=publish --field=post_title)"
 
 diff <(echo $PAGES_EXPECTED) <(echo $PAGES_LIST) || exit 1

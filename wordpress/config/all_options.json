@@ -82,7 +82,7 @@
     "stylesheet": "twentytwentyone",
     "tag_base": "",
     "template": "twentytwentyone",
-    "theme_mods_twentytwentyone": "a:5:{s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:2:{s:7:\"primary\";i:2;s:6:\"footer\";i:3;}s:16:\"background_color\";s:6:\"f4ffe0\";s:25:\"display_title_and_tagline\";b:1;s:11:\"custom_logo\";s:0:\"\";}",
+    "theme_mods_twentytwentyone": "a:5:{s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:2:{s:7:\"primary\";i:2;s:6:\"footer\";i:3;}s:16:\"background_color\";s:6:\"f4fff8\";s:25:\"display_title_and_tagline\";b:1;s:11:\"custom_logo\";s:0:\"\";}",
     "thread_comments": "1",
     "thread_comments_depth": "5",
     "thumbnail_crop": "1",
