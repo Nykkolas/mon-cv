@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  Push:
+  Pre-Release:
     runs-on: ubuntu-latest
     env:
       TAG: "latest"
