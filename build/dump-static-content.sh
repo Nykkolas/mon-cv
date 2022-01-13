@@ -5,6 +5,7 @@ set -eux
 # TODO : vérifier que la poubelle est vide
 # TODO : Option -f pour forcer le dump même si la poubelle n'est pas vide
 # TODO : Option -e pour vider la poubelle (e comme Empty trash)
+# TODO : Option pour remplacer l'url par http://localhost:8000 (ou <REPLACEME> ?)
 
 docker compose run --rm wp config push all_options \
     && docker compose cp wordpress:/var/www/html/wp-content/config/all_options.json ./wordpress/config

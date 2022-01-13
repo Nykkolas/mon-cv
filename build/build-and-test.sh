@@ -10,7 +10,7 @@ if [ ! -s .env ]; then
         DB_PASSWORD=examplepass
 
         # WORDPRESS
-        URL=http://localhost:8080
+        URL=http://dummy:8080
         ADMINUSER=adminUser
         ADMINPASSWORD=secret
         ADMINEMAIL=toto@titi.net" > .env
