@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -eu
-
 usage () {
     echo "This script pulls, builds and starts the containers."
     echo "It requires 2 files : "
@@ -16,6 +14,7 @@ if [ "-h" = $1 ]; then
     exit 0
 fi
 
+set -eu
 
 if [ -s tag ]; then
     export TAG=$(cat tag)
