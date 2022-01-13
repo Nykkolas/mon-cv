@@ -34,4 +34,7 @@ if ! wp core is-installed; then
     wp media import --preserve-filetime /usr/src/wordpress/medias/*
     wp media regenerate --yes
 
+    # Replace URL 
+    wp search-replace "http://localhost:8080" "$URL"
+
 fi

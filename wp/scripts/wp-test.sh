@@ -5,6 +5,9 @@ set -eux
 # URL
 [ "$(wp option get siteurl)" = "$URL" ] || exit 1
 
+# Tous les URL ont été mis à jour
+[ 0 -eq $(wp search-replace "http://localhost:8080" "$URL" --dry-run --format=count) ] || exit 1
+
 # Nom du site 
 EXPECTED_TITLE="Nicolas Fournier"
 EXPECTED_DESCRIPTION=""
