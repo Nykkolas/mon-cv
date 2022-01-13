@@ -17,13 +17,13 @@
  7. WordPress will then import each of the posts, pages, comments, categories, etc.
     contained in this file into your site.
 -->
-<!-- generator="WordPress/5.8.3" created="2022-01-13 08:02" -->
+<!-- generator="WordPress/5.8.3" created="2022-01-13 11:48" -->
 <rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
   <channel>
 <title>Nicolas Fournier</title>
 <link>http://localhost:8080</link>
 <description/>
-<pubDate>Thu, 13 Jan 2022 08:02:08 +0000</pubDate>
+<pubDate>Thu, 13 Jan 2022 11:48:41 +0000</pubDate>
 <language>fr-FR</language>
 <wp:wxr_version>1.2</wp:wxr_version>
 <wp:base_site_url>http://localhost:8080</wp:base_site_url>
@@ -95,17 +95,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=19</link>
-  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 11:41:27 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=19</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>19</wp:post_id>
-  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
-  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
-  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 12:41:27</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 11:41:27</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 12:41:27</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 11:41:27</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>19</wp:post_name>
@@ -176,17 +176,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=21</link>
-  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 11:41:27 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=21</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>21</wp:post_id>
-  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
-  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
-  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 12:41:27</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 11:41:27</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 12:41:27</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 11:41:27</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>21</wp:post_name>
@@ -354,8 +354,8 @@
   <wp:post_id>24</wp:post_id>
   <wp:post_date>2022-01-10 21:30:48</wp:post_date>
   <wp:post_date_gmt>2022-01-10 20:30:48</wp:post_date_gmt>
-  <wp:post_modified>2022-01-13 09:01:39</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-13 08:01:39</wp:post_modified_gmt>
+  <wp:post_modified>2022-01-10 21:30:48</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-10 20:30:48</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>coach-agile-mais-pas-que</wp:post_name>
@@ -435,17 +435,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=27</link>
-  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 11:41:28 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=27</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>27</wp:post_id>
-  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
-  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
-  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 12:41:28</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 11:41:28</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 12:41:28</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 11:41:28</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>27</wp:post_name>
@@ -516,17 +516,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=44</link>
-  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 11:41:28 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=44</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>44</wp:post_id>
-  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
-  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
-  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 12:41:28</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 11:41:28</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 12:41:28</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 11:41:28</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>44</wp:post_name>

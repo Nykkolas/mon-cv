@@ -7,6 +7,11 @@ set -eux
 # TODO : Option -e pour vider la poubelle (e comme Empty trash)
 # TODO : Option pour remplacer l'url par http://localhost:8000 (ou <REPLACEME> ?)
 
+if [ "$(docker compose run --rm wp option get siteurl)" != "http://localhost:8080" ]; then
+    echo "ERROR : l'url du site doit être \"http://localhost:8080\""
+    exit 1
+fi
+
 docker compose run --rm wp config push all_options \
     && docker compose cp wordpress:/var/www/html/wp-content/config/all_options.json ./wordpress/config
 
