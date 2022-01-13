@@ -17,13 +17,13 @@
  7. WordPress will then import each of the posts, pages, comments, categories, etc.
     contained in this file into your site.
 -->
-<!-- generator="WordPress/5.8.3" created="2022-01-12 16:32" -->
+<!-- generator="WordPress/5.8.3" created="2022-01-13 08:02" -->
 <rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
   <channel>
 <title>Nicolas Fournier</title>
 <link>http://localhost:8080</link>
 <description/>
-<pubDate>Wed, 12 Jan 2022 16:32:53 +0000</pubDate>
+<pubDate>Thu, 13 Jan 2022 08:02:08 +0000</pubDate>
 <language>fr-FR</language>
 <wp:wxr_version>1.2</wp:wxr_version>
 <wp:base_site_url>http://localhost:8080</wp:base_site_url>
@@ -95,17 +95,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=19</link>
-  <pubDate>Wed, 12 Jan 2022 13:58:45 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=19</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>19</wp:post_id>
-  <wp:post_date>2022-01-12 14:58:45</wp:post_date>
-  <wp:post_date_gmt>2022-01-12 13:58:45</wp:post_date_gmt>
-  <wp:post_modified>2022-01-12 14:58:45</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-12 13:58:45</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>19</wp:post_name>
@@ -176,17 +176,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=21</link>
-  <pubDate>Wed, 12 Jan 2022 13:58:45 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=21</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>21</wp:post_id>
-  <wp:post_date>2022-01-12 14:58:45</wp:post_date>
-  <wp:post_date_gmt>2022-01-12 13:58:45</wp:post_date_gmt>
-  <wp:post_modified>2022-01-12 14:58:45</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-12 13:58:45</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>21</wp:post_name>
@@ -238,8 +238,8 @@
   <guid isPermaLink="false">http://localhost:8080/?page_id=24</guid>
   <description/>
   <content:encoded><![CDATA[<!-- wp:cover {"customOverlayColor":"#e2ffec","minHeight":100,"minHeightUnit":"vh","contentPosition":"center center","align":"full"} -->
-<div class="wp-block-cover alignfull has-background-dim" style="background-color:#e2ffec;min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:media-text {"mediaId":30,"mediaLink":"http://localhost:8080/?attachment_id=30","mediaType":"image","mediaWidth":41,"verticalAlignment":"center","imageFill":false} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center" style="grid-template-columns:41% auto"><figure class="wp-block-media-text__media"><img src="http://localhost:8080/wp-content/uploads/2007/12/mammif.gif" alt="" class="wp-image-30 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"style":{"typography":{"fontSize":"32px"},"color":{"text":"#000000"}}} -->
+<div class="wp-block-cover alignfull has-background-dim" style="background-color:#e2ffec;min-height:100vh"><div class="wp-block-cover__inner-container"><!-- wp:media-text {"mediaId":47,"mediaLink":"http://localhost:8080/?attachment_id=47","mediaType":"image","mediaWidth":41,"verticalAlignment":"center","imageFill":false} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center" style="grid-template-columns:41% auto"><figure class="wp-block-media-text__media"><img src="http://localhost:8080/wp-content/uploads/mammif.gif" alt="" class="wp-image-47 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"style":{"typography":{"fontSize":"32px"},"color":{"text":"#000000"}}} -->
 <h2 class="has-text-color" style="color:#000000;font-size:32px"><strong>Bonjour,</strong></h2>
 <!-- /wp:heading -->
 
@@ -260,8 +260,8 @@
 <div class="wp-block-column is-vertically-aligned-top has-background" style="background-color:#9ab3a3"><!-- wp:group {"align":"wide","className":"is-style-twentytwentyone-border col"} -->
 <div class="wp-block-group alignwide is-style-twentytwentyone-border col"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-default"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","id":29,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-full"><img src="http://localhost:8080/wp-content/uploads/2022/01/coaching.png" alt="" class="wp-image-29"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image alignwide size-large"><img src="http://localhost:8080/wp-content/uploads/coaching.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -282,8 +282,8 @@
 <div class="wp-block-column is-vertically-aligned-center has-background" style="background-color:#eedbff"><!-- wp:group {"className":"is-style-twentytwentyone-border col"} -->
 <div class="wp-block-group is-style-twentytwentyone-border col"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-default"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","id":43,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-full"><img src="http://localhost:8080/wp-content/uploads/2022/01/workshop.png" alt="" class="wp-image-43"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image alignwide size-large"><img src="http://localhost:8080/wp-content/uploads/workshop.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -306,8 +306,8 @@
 <div class="wp-block-column has-background" style="background-color:#fff1db"><!-- wp:group {"className":"is-style-twentytwentyone-border col"} -->
 <div class="wp-block-group is-style-twentytwentyone-border col"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-default"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","id":44,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-full"><img src="http://localhost:8080/wp-content/uploads/2022/01/agile.png" alt="" class="wp-image-44"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image alignwide size-large"><img src="http://localhost:8080/wp-content/uploads/agile.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -328,8 +328,8 @@
 <div class="wp-block-column has-background" style="background-color:#b3aca1"><!-- wp:group {"className":"is-style-twentytwentyone-border col"} -->
 <div class="wp-block-group is-style-twentytwentyone-border col"><!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-default"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","id":45,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image alignwide size-full"><img src="http://localhost:8080/wp-content/uploads/2022/01/manager.png" alt="" class="wp-image-45"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:image {"align":"wide","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image alignwide size-large"><img src="http://localhost:8080/wp-content/uploads/manager.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -354,8 +354,8 @@
   <wp:post_id>24</wp:post_id>
   <wp:post_date>2022-01-10 21:30:48</wp:post_date>
   <wp:post_date_gmt>2022-01-10 20:30:48</wp:post_date_gmt>
-  <wp:post_modified>2022-01-12 17:24:26</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-12 16:24:26</wp:post_modified_gmt>
+  <wp:post_modified>2022-01-13 09:01:39</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 08:01:39</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>coach-agile-mais-pas-que</wp:post_name>
@@ -435,17 +435,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=27</link>
-  <pubDate>Wed, 12 Jan 2022 13:58:46 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=27</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>27</wp:post_id>
-  <wp:post_date>2022-01-12 14:58:46</wp:post_date>
-  <wp:post_date_gmt>2022-01-12 13:58:46</wp:post_date_gmt>
-  <wp:post_modified>2022-01-12 14:58:46</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-12 13:58:46</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>27</wp:post_name>
@@ -516,17 +516,17 @@
 <item>
   <title/>
   <link>http://localhost:8080/?p=44</link>
-  <pubDate>Wed, 12 Jan 2022 13:58:46 +0000</pubDate>
+  <pubDate>Thu, 13 Jan 2022 07:59:24 +0000</pubDate>
   <dc:creator/>
   <guid isPermaLink="false">http://localhost:8080/?p=44</guid>
   <description/>
   <content:encoded><![CDATA[ ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>44</wp:post_id>
-  <wp:post_date>2022-01-12 14:58:46</wp:post_date>
-  <wp:post_date_gmt>2022-01-12 13:58:46</wp:post_date_gmt>
-  <wp:post_modified>2022-01-12 14:58:46</wp:post_modified>
-  <wp:post_modified_gmt>2022-01-12 13:58:46</wp:post_modified_gmt>
+  <wp:post_date>2022-01-13 08:59:24</wp:post_date>
+  <wp:post_date_gmt>2022-01-13 07:59:24</wp:post_date_gmt>
+  <wp:post_modified>2022-01-13 08:59:24</wp:post_modified>
+  <wp:post_modified_gmt>2022-01-13 07:59:24</wp:post_modified_gmt>
   <wp:comment_status>closed</wp:comment_status>
   <wp:ping_status>closed</wp:ping_status>
   <wp:post_name>44</wp:post_name>
