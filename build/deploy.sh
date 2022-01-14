@@ -1,7 +1,9 @@
 #!/bin/sh
 
+# TODO : test pour savoir si on est logué à GHCR.io
+
 usage () {
-    echo "This script pulls, builds and starts the containers."
+    echo "This script pulls and starts the containers."
     echo "It requires 2 files : "
     echo "  - .env with the various parameters (see example folder)"
     echo "  - tag containing the version to deploy"

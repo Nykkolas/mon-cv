@@ -5,7 +5,7 @@ set -eux
 # TODO : vérifier que la poubelle est vide
 # TODO : Option -f pour forcer le dump même si la poubelle n'est pas vide
 # TODO : Option -e pour vider la poubelle (e comme Empty trash)
-# TODO : Option pour remplacer l'url par http://localhost:8000 (ou <REPLACEME> ?)
+# TODO : Option pour remplacer l'url par http://localhost:8000 (ou <SITE_URL> ?)
 
 if [ "$(docker compose run --rm wp option get siteurl)" != "http://localhost:8080" ]; then
     echo "ERROR : l'url du site doit être \"http://localhost:8080\""
