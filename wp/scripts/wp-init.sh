@@ -18,9 +18,6 @@ if ! wp core is-installed; then
         --admin_email=${ADMINEMAIL} \
         --admin_password=${ADMINPASSWORD}
 
-    # Téléchargement de la langue
-    wp language core install fr_FR 
-
     # Chargement de la conf
     wp plugin activate wp-cfm
     # TODO : essayer de push puis diff ? (wp config diff ne semble pas fonctionner)
