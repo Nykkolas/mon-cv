@@ -1,19 +1,24 @@
 #!/bin/sh
 
-set -eux
+set -ex
 
 if [ ! -s .env ]; then
-    echo "\
-        # DATABASE
-        DB_NAME=exampledb
-        DB_USER=exampleuser
-        DB_PASSWORD=examplepass
+    if [ "$1" = "-d" ]; then
+        echo "\
+            # DATABASE
+            DB_NAME=exampledb
+            DB_USER=exampleuser
+            DB_PASSWORD=examplepass
 
-        # WORDPRESS
-        URL=http://dummy:8080
-        ADMINUSER=adminUser
-        ADMINPASSWORD=secret
-        ADMINEMAIL=toto@titi.net" > .env
+            # WORDPRESS
+            URL=http://dummy:8080
+            ADMINUSER=adminUser
+            ADMINPASSWORD=secret
+            ADMINEMAIL=toto@titi.net" > .env
+    else 
+        echo "Error : .env file doesn't exists, use -d to create a dummy file"
+        exit 1
+    fi
 fi
 
 docker compose build
