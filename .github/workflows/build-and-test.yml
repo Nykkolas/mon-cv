@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: Build and test
-        run: sh -c "./build/build-and-test.sh -d"
+        run: sh ./build/build-and-test.sh -d
       
       # - name: Create artifacts
       #   if: ${{ inputs.save-artifacts == true }}
