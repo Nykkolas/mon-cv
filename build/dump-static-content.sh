@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Dumps all the Wordpress static content that will be loaded in a fresh install
+# Content is :
+#   - Configuration options
+#   - Posts, navigation menu, etc...
+
 set -eux
 
 # TODO : vérifier que la poubelle est vide

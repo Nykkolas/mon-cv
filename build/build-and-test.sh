@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Build then tests services
+# Used in Github workflows or manually to check that everything is buildable
+
 set -ex
 
 if [ ! -s .env ]; then

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Creates the TAR packages that contains all the files necessary 
+# to install on a new server
+
 set -eux
 
 if [ -z ${TAG:+x} ]; then
