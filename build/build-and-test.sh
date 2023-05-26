@@ -28,7 +28,8 @@ docker compose build
 
 docker compose up -d
 
-until docker compose ps wp | grep exited >/dev/null 2>&1; do
+# until docker compose ps wp | grep exited >/dev/null 2>&1; do # Ne fonctionne plus
+until [ "`docker compose ps -a --services --filter status=exited db`" = "wp" ]; do
     echo "Waiting end of wp-init..."
     sleep 1
 done

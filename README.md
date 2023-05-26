@@ -1,3 +1,13 @@
+# Dans un environnement de dev
+
+Windows :
+1. Installer WSL 
+2. Installer Docker
+3. Cloner le repository
+4. Créer le fichier .env
+5. Lancer ./build/build-and-test.sh dans une fenêtre WSL
+
+
 # Pour créer le package à déployer
 
 1. Récupérer le contenu static en prod (./build/dump-static-content.sh)
