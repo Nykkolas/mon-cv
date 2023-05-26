@@ -6,6 +6,7 @@ Windows :
 3. Cloner le repository
 4. Créer le fichier .env
 5. Lancer ./build/build-and-test.sh dans une fenêtre WSL
+6. Le site est accessible
 
 
 # Pour créer le package à déployer
